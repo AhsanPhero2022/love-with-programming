@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="love.jpg" type="image/x-icon">
+  <title>Love</title>
+</head>
+<body>
+  <div id="first-area">
+  <div class="first">
+    <img src="hi.jpg" alt="">
+    <h1>Will you be my life partner?</h1>
+  </div>
+
+  <div class="button-area">
+    <div class="yes-button">
+      <button class="button" id="love">Yes</button>
+    </div>
+    <div class="of-button" id="broke"><button class="button">Of course, No!!!</button></div>
+  </div>
+</div>
+
+
+<!-- second area -->
+
+<div id="second-area">
+ <div class="love-site">
+  <h2 style="color: green;">I love you!!!</h2>
+  <img src="love.jpg" alt="">
+</div>
+</div>
+
+<!-- third area -->
+
+<div id="third-area">
+<div class="broke">
+  <img src="broke.jpg" alt="">
+  <h2>You are broke my heart!!</h2>
+</div>
+</div>
+
+<script>
+  const loveBtn = document.getElementById("love");
+
+  loveBtn.addEventListener("click", function(){
+    const firstArea = document.getElementById("first-area");
+    firstArea.style.display = "none";
+
+    const secondArea = document.getElementById("second-area");
+    secondArea.style.display = "block";
+  })
+
+  const brokeBtn = document.getElementById("broke");
+
+  brokeBtn.addEventListener("click", function(){
+    const firstArea = document.getElementById("first-area");
+    firstArea.style.display = "none";
+
+    const thiedArea = document.getElementById("third-area");
+    thiedArea.style.display = "block";
+  })
+</script>
+</body>
+</html>

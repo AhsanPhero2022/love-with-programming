@@ -1,0 +1,114 @@
+.first{
+  margin-top: 50px;
+  display: flex;
+
+  
+
+}
+h1{
+  color: aqua;
+  font-size: 60px;
+  margin-top: 20%;
+  margin-left: 0%;
+}
+
+.button-area{
+  margin: 20px;
+  padding: 15px;
+
+}
+
+.button-area{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.button{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: aqua;
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+}
+
+button:hover {
+  background-color: yellow;
+  border: 1.5px solid black;
+}
+
+/* second-area */
+
+#second-area{
+  display: none;
+}
+
+.love-site{
+  display: flex;
+  justify-content: space-around;
+}
+ 
+.love-site>img{
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+h2{
+  margin-top: 25%;
+  font-size: 100px;
+  color: red;
+  margin-left: 7%;
+ 
+}
+
+/* Third-area */
+
+#third-area{
+  display: none;
+}
+
+.broke{
+  display: flex;
+  
+}
+.broke>img{
+  width: 40%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .first {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .love-site {
+    display: flex;
+    flex-direction: column;
+  }
+  .love-site>img{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .broke{
+    display: flex;
+    flex-direction: column;
+  }
+  .broke>img{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .button{
+    font-size: 18px;
+    width: 150px;
+  }
+}
